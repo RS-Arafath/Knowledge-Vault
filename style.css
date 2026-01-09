@@ -23,6 +23,14 @@ body {}
   padding: 16px;
   border-radius: 6px;
   cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+
+}
+
+.btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 18px -8px #46916597;
 }
 
 .white-btn {
@@ -35,14 +43,24 @@ body {}
   border-radius: 6px;
   /* margin-left: 20px; */
   cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
 }
+
+.white-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 18px -8px rgba(0, 0, 0, 0.38);
+  background-color: rgb(255, 255, 255, 0.08);
+}
+
 #feature,
 #challenge {
   margin-top: 100px;
 }
 
+/* all section container here */
 .card-container,
-.challenge-container {
+.challenge-container,
+.footer-container {
   margin-top: 60px;
   width: 85%;
   max-width: 1240px;
@@ -51,29 +69,6 @@ body {}
   justify-content: center;
   text-align: center;
 }
-
-.challenge-container{
-  background-color: #F7F6F2;
-  border-radius: 12px;
-}
-.challenge-content{
-  padding: 80px 0px ;
-}
-.challenge-content h2{
-  font-size: 40px;
-  color: #001931;
-}
-.challenge-content p{
-  margin-top: 16px;
-color: #627382;
-line-height: 24px;
-margin-bottom: 24px;
-}
-
-
-
-
-
 
 /* ~~~~~~~~~common style~~~~~~~~~~~~ */
 
@@ -94,9 +89,8 @@ margin-bottom: 24px;
 .logo-img {
   width: 139px;
   height: 60px;
-  padding: 16px;
+  padding: 10px;
   cursor: pointer;
-
 }
 
 .nav-list {
@@ -127,7 +121,6 @@ margin-bottom: 24px;
   /* align-items: center; */
   text-align: center;
   padding: 115px 120px 179px 115px;
-
 }
 
 .hero-container .rounded-box {
@@ -165,13 +158,14 @@ margin-bottom: 24px;
   margin-bottom: 32px;
 }
 
-/* ~~~~~card section~~~~ */
+/* ~~~~~card style~~~~ */
 
 
 .card-container h2 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 16px;
+  text-transform: capitalize;
 }
 
 .card-container p {
@@ -184,6 +178,7 @@ margin-bottom: 24px;
 .card-box {
   margin-top: 100px;
   display: flex;
+  gap: 24px;
   justify-content: space-between;
 }
 
@@ -213,7 +208,14 @@ margin-bottom: 24px;
   padding: 24px;
   border-radius: 8px;
   background-color: #fff;
+  cursor: pointer;
   box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.38);
 }
 
 .card h3 {
@@ -221,6 +223,7 @@ margin-bottom: 24px;
   font-weight: 700;
   margin-bottom: 16px;
   color: #001931;
+  text-transform: capitalize;
 }
 
 .card p {
@@ -228,7 +231,7 @@ margin-bottom: 24px;
   line-height: 20px;
 }
 
-/* ~~~idea section~~~~ */
+/* ~~~idea style~~~~ */
 #idea {
   width: 85%;
   max-width: 1240px;
@@ -243,7 +246,6 @@ margin-bottom: 24px;
   justify-content: space-between;
   text-align: center;
   gap: 20px;
-
 }
 
 .idea-img {
@@ -253,7 +255,6 @@ margin-bottom: 24px;
 }
 
 .idea-content {
-
   width: 600px;
   padding: 100px 0 100px 20px;
   /* align-items: center; */
@@ -291,5 +292,90 @@ margin-bottom: 24px;
 
 .idea-formula p {
   color: 001931;
+}
 
+
+/* ~~~challenge-style~~~ */
+
+.challenge-container {
+  background-color: #F7F6F2;
+  border-radius: 12px;
+}
+
+.challenge-content {
+  padding: 80px 0px;
+}
+
+.challenge-content h2 {
+  font-size: 40px;
+  color: #001931;
+  text-transform: capitalize;
+}
+
+.challenge-content p {
+  margin-top: 16px;
+  color: #627382;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+#footer {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #001931;
+}
+
+
+.footer-content {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 100px 0 100px 0;
+  margin: 0 auto;
+}
+
+.icon-box {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  padding: 20px;
+}
+
+.icon-box p {
+  color: white;
+}
+
+.icon-box li {
+  list-style-type: none;
+}
+
+.icon-box li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.hr {
+  /* border-color:#1c2c3a; */
+  border-color: #E5E7EB;
+}
+
+.copy-right {
+  color: #d1c7c7;
+  line-height: 24px;
+  padding: 20px;
 }
