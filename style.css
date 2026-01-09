@@ -24,8 +24,6 @@ body {}
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
-
-
 }
 
 .btn:hover {
@@ -70,7 +68,7 @@ body {}
   text-align: center;
 }
 
-/* ~~~~~~~~~common style~~~~~~~~~~~~ */
+/* ~~~~~~~~~common style bellow~~~~~~~~~~~~ */
 
 /* ~~~~~~~Nav section~~~~~~~~~~ */
 #nav {
@@ -124,14 +122,28 @@ body {}
 }
 
 .hero-container .rounded-box {
+  gap: 5px;
   display: flex;
   text-align: center;
   width: 229px;
   background-color: white;
+  align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 5px;
+  padding: 8px;
   border-radius: 50px;
+}
+
+.hero-container .rounded-box img {
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+}
+
+.hero-container .rounded-box h4 {
+  color: #469165;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .hero-content {
@@ -355,11 +367,11 @@ body {}
 
 .icon-box li a {
   text-decoration: none;
-  color: white;
   padding: 10px;
 }
 
 .icon {
+  color: white;
   font-size: 20px;
   cursor: pointer;
   transition: transform 0.4s ease;
