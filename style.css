@@ -36,7 +36,39 @@ body {}
   /* margin-left: 20px; */
   cursor: pointer;
 }
+#feature,
+#challenge {
+  margin-top: 100px;
+}
 
+.card-container,
+.challenge-container {
+  margin-top: 60px;
+  width: 85%;
+  max-width: 1240px;
+  margin: 0 auto;
+  /* padding: 15px; */
+  justify-content: center;
+  text-align: center;
+}
+
+.challenge-container{
+  background-color: #F7F6F2;
+  border-radius: 12px;
+}
+.challenge-content{
+  padding: 80px 0px ;
+}
+.challenge-content h2{
+  font-size: 40px;
+  color: #001931;
+}
+.challenge-content p{
+  margin-top: 16px;
+color: #627382;
+line-height: 24px;
+margin-bottom: 24px;
+}
 
 
 
@@ -92,9 +124,9 @@ body {}
 
 .hero-container {
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
-  padding: 115px 120px 263px 115px;
+  padding: 115px 120px 179px 115px;
 
 }
 
@@ -111,6 +143,7 @@ body {}
 
 .hero-content {
   padding: 0 250px 0 250px;
+  align-items: center;
 }
 
 .hero-content h1 {
@@ -133,19 +166,7 @@ body {}
 }
 
 /* ~~~~~card section~~~~ */
-#feature {
-  margin: 100px 0 100px;
-}
 
-.card-container {
-  width: 85%;
-  width: 85%;
-  /* max-width: 1240px; */
-  margin: 0 auto;
-  padding: 15px;
-  justify-content: center;
-  text-align: center;
-}
 
 .card-container h2 {
   font-size: 48px;
@@ -167,7 +188,7 @@ body {}
 }
 
 
-.icon-circle{
+.icon-circle {
   display: flex;
   width: 60px;
   height: 60px;
@@ -177,28 +198,98 @@ body {}
   margin: 0 auto 18px;
   justify-content: center;
   text-align: center;
-margin-top: 50px; 
+  margin-top: 50px;
 }
-.icon-circle img{
+
+.icon-circle img {
   object-fit: contain;
   justify-content: center;
   align-items: center;
 }
+
 .card {
   width: 300px;
   height: 300px;
   padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 0  10px rgb(190, 178, 178);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 8px 0 rgb(0, 0, 0, 0.08);
 }
-.card h3{
+
+.card h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
   color: #001931;
 }
 
-.card p{
-color: #627382;
-line-height: 20px;
+.card p {
+  color: #627382;
+  line-height: 20px;
+}
+
+/* ~~~idea section~~~~ */
+#idea {
+  width: 85%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.idea-container {
+  display: flex;
+  gap: 20px;
+  padding-top: 100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+
+}
+
+.idea-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 12px;
+}
+
+.idea-content {
+
+  width: 600px;
+  padding: 100px 0 100px 20px;
+  /* align-items: center; */
+  text-align: left;
+}
+
+.idea-content .tittle {
+  font-weight: 500;
+  color: #469165;
+  margin-bottom: 16px;
+}
+
+.idea-content h3 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+.idea-content .describe {
+  color: #627382;
+  margin-bottom: 30px;
+}
+
+.idea-formula {
+  display: flex;
+  gap: 10px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.idea-formula img {
+  align-items: center;
+}
+
+.idea-formula p {
+  color: 001931;
+
 }
